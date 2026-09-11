@@ -1,18 +1,19 @@
 @charset "UTF-8";
 
 html{
-    background-color: #E2E5E2
+    background-color: var(--BG1);
+    min-height: 100%;
 
 
 
 
 }
 :root{
-    --FG: 255, 255, 255;
-    --BG1: 30, 28, 27;
-    --BG2 : 50, 48, 47;
-    --HL: 63, 154, 44;
-    --PAGE_WIDTH: 960px
+    --FG: rgba(80, 173, 188 );
+    --BG1: rgba(230, 233, 232);
+    --BG2 : rgba(186, 122, 143);
+    --HL: rgba(177, 73, 65);
+    --PAGE_WIDTH: 960px;
     --BIG:  32px;
     --MED: 16px;
     --SML: 8px;
@@ -31,36 +32,60 @@ a{
     text-decoration: none;
 }
 header{
+    display:  flex;
+    background-color: rgb(from var(--BG2) r g b / 0.2); 
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     
 }
 
+a{
+    color: var(--HL);
+    font-weight: bold;
+}
 
 header h1{
     padding-top: var(--MED);
     padding-bottom: var(--MED);
+    align-self: center;
 }
 header nav{
-    padding-bottom: var(--SML);
+    display: flex;
+    column-gap: 2em;
+    align-self: center;
   
 }
 
 header nav a{
-    margin: 0 var(--MED) 0 var(--MED);
+    display: flex;
+    column-gap: 2em;
 }
 
 p{
     text-align: center;
+    padding-bottom: var(--SML);
 }
 
 main{
+    flex-grow: 1;
 padding-top: var(--SML);
 padding-bottom: var(--SML);
 
 }
 
+main img{
+    text-align: center;
+}
 
 body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:  12pt;
+    font-weight: 300;
+    line-height: 1.35;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0 var(--MED) 0 var(--MED);
     min-height: 100vh;
     margin:  0 auto;
@@ -70,26 +95,25 @@ body{
 
 }
 
-body p {
-/* color: #B3462F */
-
-
-;
+figure{
+    margin: var(--MED) auto;
+    text-align: center;
+        
 }
+
+figcaption{
+    margin-top: var(--QRT);
+}
+
 body img{
-    
-    
-    max-width: 75%;
-    height: auto;
+    max-width: 500px;
+    max-height: 600px;
 }
-
-
 
 footer{
     display: flex;
-    border: 1px solid red ;
     justify-content: space-between;
-    /* color:   #5DBBCD  ; */
+
 
 }
 
