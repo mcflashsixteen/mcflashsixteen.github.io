@@ -30,6 +30,8 @@ html{
 
 a{
     text-decoration: none;
+    color: var(--HL);
+    font-weight: bold;
 }
 header{
     display:  flex;
@@ -40,10 +42,7 @@ header{
     
 }
 
-a{
-    color: var(--HL);
-    font-weight: bold;
-}
+
 
 header h1{
     padding-top: var(--MED);
@@ -62,6 +61,19 @@ header nav a{
     column-gap: 2em;
 }
 
+h2{
+    color: var(--FG);
+    text-align: center;
+    padding-top: var(--MED);
+    padding-bottom: var(--MED);
+}
+
+h3{
+    color: var(--FG);
+    text-align: center;
+    padding-top: var(--MED);
+    padding-bottom: var(--MED);
+}
 p{
     text-align: center;
     padding-bottom: var(--SML);
@@ -115,5 +127,8 @@ footer{
     justify-content: space-between;
 
 
+}
+footer a{
+    color: var(--BG2);
 }
 
