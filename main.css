@@ -21,6 +21,28 @@ html{
     --TNY: 2px;
 
 }
+/* FONTS */
+
+.short-stack-regular {
+    font-family: "Short Stack", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.dosis-regular {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poltawski-nowy-regular {
+    font-family: "Poltawski Nowy", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /*  */
 *{
     margin: 0;
     padding: 0;
@@ -34,17 +56,22 @@ a{
     font-weight: bold;
 }
 header{
-    display:  flex;
+    display: flex;
     background-color: rgb(from var(--BG2) r g b / 0.2); 
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
+    border-bottom: 3px solid var(--HL);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
 
 header h1{
+    font-family: poltawski-nowy-regular, serif;
     padding-top: var(--MED);
     padding-bottom: var(--MED);
     align-self: center;
@@ -73,8 +100,10 @@ h3{
     text-align: center;
     padding-top: var(--MED);
     padding-bottom: var(--MED);
+    font-family: "Short Stack", cursive;
 }
 p{
+    font-family:  dosis , sans-serif;
     text-align: center;
     padding-bottom: var(--SML);
 }
@@ -107,6 +136,10 @@ body{
 
 }
 
+body ul{
+        font-family:  dosis , sans-serif;
+
+}
 figure{
     margin: var(--MED) auto;
     text-align: center;
@@ -115,6 +148,8 @@ figure{
 
 figcaption{
     margin-top: var(--QRT);
+    font-family: "Short Stack", cursive;
+
 }
 
 body img{
