@@ -29,6 +29,7 @@ html{
     font-style: normal;
   }
 
+
 .dosis-regular {
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
@@ -106,6 +107,7 @@ p{
     font-family:  dosis , sans-serif;
     text-align: center;
     padding-bottom: var(--SML);
+    padding-top: var(--MED);
 }
 
 main{
