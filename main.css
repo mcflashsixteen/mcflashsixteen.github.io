@@ -19,6 +19,12 @@ html{
     --SML: 8px;
     --QRT: 4px;
     --TNY: 2px;
+    /* COLOR SCHEME 2 */
+    /* --FG: rgba(72, 75, 135, 1);
+    --BG1: rgba(255, 248, 220, 1);
+    --BG2: rgba(210, 199, 246, 1);
+    --HL: rgba(255, 155, 104, 1); */
+    /*  */
 
 }
 /* FONTS */
@@ -87,6 +93,7 @@ header nav{
 header nav a{
     display: flex;
     column-gap: 2em;
+    padding-bottom: var(--MED);
 }
 
 h2{
@@ -103,11 +110,28 @@ h3{
     padding-bottom: var(--MED);
     font-family: "Short Stack", cursive;
 }
+
+h4{
+    color: var(--FG);
+    text-align: center;
+    padding-top: var(--MED);
+    padding-bottom: var(--MED);
+    font-family: "Short Stack", cursive;
+}
 p{
     font-family:  dosis , sans-serif;
-    text-align: center;
+    text-align:  center;
     padding-bottom: var(--SML);
     padding-top: var(--MED);
+    font-size: 14pt;
+    line-height: 1.5;
+    border-bottom: 3px dotted var(--BG2);
+}
+
+ul, li{
+    font-family:  dosis , sans-serif;
+    font-size: 14pt;
+
 }
 
 main{
@@ -146,6 +170,13 @@ figure{
     margin: var(--MED) auto;
     text-align: center;
         
+}
+iframe{
+    display: block;
+    margin: var(--MED) auto;
+    text-align: center;
+    
+   
 }
 
 figcaption{
