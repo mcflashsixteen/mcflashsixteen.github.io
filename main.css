@@ -19,7 +19,7 @@ html{
     --SML: 8px;
     --QRT: 4px;
     --TNY: 2px;
-    COLOR SCHEME 2 
+    /* COLOR SCHEME 2  */
      /* --FG: rgba(42, 87, 145, 1);
      --BG1: rgba(255, 255, 255, 1);
     --BG2: rgba(220, 207, 248, 1);
@@ -67,7 +67,7 @@ header{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border-bottom: 3px solid var(--HL);
+    border: 3px solid var(--HL);
     width: 100vw;
     position: relative;
     left: 50%;
