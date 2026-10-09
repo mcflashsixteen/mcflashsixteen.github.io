@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 html{
-    background-color: var(--BG1);
+    /* background-color: var(--BG1); */
+    background-image: url(/share/Images/background.svg);
+
     min-height: 100%;
 
 
@@ -24,7 +26,7 @@ html{
      --BG1: rgba(255, 255, 255, 1);
     --BG2: rgba(220, 207, 248, 1);
     --HL: rgba(255, 171, 105, 1);  */
-    
+
 }
 /* FONTS */
 
@@ -63,7 +65,7 @@ a{
 }
 header{
     display: flex;
-    background-color: rgb(from var(--BG2) r g b / 0.2); 
+    background-color: rgb(from var(--BG2) r g b / 0.2);
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -86,7 +88,7 @@ header nav{
     display: flex;
     column-gap: 2em;
     align-self: center;
-  
+
 }
 
 header nav a{
@@ -139,6 +141,14 @@ padding-top: var(--SML);
 padding-bottom: var(--SML);
 
 }
+main canvas{
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--HL);
+    display: block;
+    min-height: 100%;
+}
+
 
 main img{
     text-align: center;
@@ -157,7 +167,7 @@ body{
     margin:  0 auto;
     max-width: var(--PAGE_WIDTH);
     --PAGE_WIDTH: 960px
-    
+
 
 }
 
@@ -168,14 +178,15 @@ body ul{
 figure{
     margin: var(--MED) auto;
     text-align: center;
-        
+
+
 }
 iframe{
     display: block;
     margin: var(--MED) auto;
     text-align: center;
-    
-   
+
+
 }
 
 figcaption{

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+html {
+    background-image: url(./Images/pb.svg);
+    min-height: 100%;
+}
+
+:root{
+    --FG: rgba(80, 173, 188 );
+    --BG: rgba(214, 184, 155);
+    --HL: rgba(177, 73, 65);
+    --PAGE_WIDTH: 960px;
+    --BIG:  32px;
+    --MED: 16px;
+    --SML: 8px;
+    --QRT: 4px;
+    --TNY: 2px;
+   
+    
+}
+
+/* Fonts */
+
+.tangerine-regular {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .rubik-distressed-regular {
+    font-family: "Rubik Distressed", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }  
+/*  */
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+   
+p {
+    max-width: 650px;
+    margin: 0 auto 24px;
+    padding: 0 16px;
+    font-size: 30px;
+    line-height: 1.45;
+    text-align: justify;
+    font-family: "Tangerine", cursive;
+  }
+  .wolf-font{
+    font-family: "Rubik Distressed", system-ui;
+    font-size: 20px;
+    color: #560115;
+  }
