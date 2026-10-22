@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 html{
-    /* background-color: var(--BG1); */
-    background-image: url(/share/Images/background.svg);
+    background-color: var(--BG1);
+    /* background-image: url(/share/Images/background.svg); */
 
     min-height: 100%;
 

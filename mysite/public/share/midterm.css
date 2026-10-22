@@ -6,49 +6,97 @@ html {
 }
 
 :root{
-    --FG: rgba(80, 173, 188 );
-    --BG: rgba(214, 184, 155);
-    --HL: rgba(177, 73, 65);
+  --INK : #1a1a1a;
+  --WOLF : #560115;
     --PAGE_WIDTH: 960px;
     --BIG:  32px;
     --MED: 16px;
     --SML: 8px;
     --QRT: 4px;
     --TNY: 2px;
-   
-    
+
+
 }
 
-/* Fonts */
+@font-face {
+  font-family: "Nabel";
+  src: url(./Fonts/Nabel.ttf) format("truetype");
+  font-display: swap;
+}
 
-.tangerine-regular {
-    font-family: "Tangerine", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .tangerine-bold {
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }
+/* Title block fonts */
+@font-face {
+  font-family: "Latin Modern";
+  src: url(./Fonts/LM-regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
-  .rubik-distressed-regular {
-    font-family: "Rubik Distressed", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }  
-/*  */
+@font-face {
+  font-family: "Latin Modern";
+  src: url(./Fonts/LM-italic.woff2) format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Latin Modern";
+  src: url(./Fonts/LM-bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 header{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  font-family: "Latin Modern", Georgia, "Times New Roman", serif;
+  color: var(--INK);
+}
+
+header h1 {
+  font-family: "Fraunces", "Latin Modern", Georgia, serif;
+  font-weight: 800;
+  font-optical-sizing: auto;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin: 0 0 2rem;
+}
+
+header .byline{
+  font-family: inherit;
+  font-size: 1.0625rem;
+  font-variant-caps: small-caps;
+  line-height: 1.5;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.short-rule {
+  width: 5rem;
+  margin: 3rem auto;
+  border: none;
+  border-top: 1px solid var(--INK);
+}
+
+ figcaption {
+  margin-top: 0.5em;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+figure{
+  margin: 24px 0;
+  text-align: center;
+}
+
+figure img{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
 
@@ -59,18 +107,115 @@ main {
     margin: 0 auto;
     padding: 24px;
   }
-   
+
 p {
     max-width: 650px;
     margin: 0 auto 24px;
     padding: 0 16px;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 1.45;
     text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
     font-family: "Tangerine", cursive;
   }
   .wolf-font{
     font-family: "Rubik Distressed", system-ui;
-    font-size: 20px;
-    color: #560115;
+    font-size: 1.25rem;
+    color: var(--WOLF)
   }
+
+
+.drop-cap::first-letter {
+  float: left;
+  font-family: "Nabel", "Tangerine", cursive;
+  font-size: 3.6em;
+  line-height: 1;
+  margin: 0.05em 0.1em 0 0;
+  
+}
+
+.pull-quote {
+  max-width: 480px;
+  margin: 48px auto;
+  padding: 24px 16px;
+  border-top: 2px solid var(--WOLF);
+  border-bottom: 2px solid var(--WOLF);
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--WOLF);
+}
+
+/* Designer's note and sources */
+footer {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 24px 24px 48px;
+}
+
+footer h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+  color: var(--INK);
+  margin: 48px 0 16px;
+}
+
+footer p {
+  font-family: "Latin Modern", Georgia, "Times New Roman", serif;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: var(--INK);
+}
+
+.sources {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px 0 40px;
+  font-family: "Latin Modern", Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--INK);
+  overflow-wrap: break-word;
+}
+
+.sources li {
+  margin-bottom: 8px;
+}
+
+.sources a {
+  color: var(--WOLF);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 16px 8px;
+  }
+
+  p {
+    padding: 0 8px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .pull-quote {
+    margin: 32px 8px;
+    font-size: 1.75rem;
+  }
+
+  footer {
+    padding: 16px 8px 32px;
+  }
+
+  .sources {
+    padding: 0 8px 0 28px;
+  }
+}
