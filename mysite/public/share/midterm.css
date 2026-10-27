@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html {
-    background-image: url(./Images/pb.svg);
+    /* background-image: url(./Images/pb.svg);  The 'Feen didn't like it */
     min-height: 100%;
 }
 
